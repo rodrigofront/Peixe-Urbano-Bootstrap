@@ -1,13 +1,13 @@
 Peixe-Urbano-Bootstrap
 ======================
 
--- História
+== História
 Os Desenvolvedores Front-end do Peixe Urbano historicamente tem usado quase qualquer estrutura/biblioteca que eles estavam familiarizados para atender requisitos de interface.
 
 O Pixe Urbano Bootstrap tem como desafio padronizar esta estrutura/bibliotecas para atender os requisitos de um Website e sistemas Responsive e Performance.
 
 
--- O que esta incluso
+== O que esta incluso
 O Peixe Urbano Bootstrap inclui uma completa estrutura HTML5, CSS3 e 100% fluido para Tablets e Celulares.
 
 * Sistema de Grid, fluido e fixo
@@ -15,7 +15,7 @@ O Peixe Urbano Bootstrap inclui uma completa estrutura HTML5, CSS3 e 100% fluido
 * Sistemas de abas
 * Sistemas de Accordion
 
--- Browser suportados
+== Browser suportados
 Peixe Urbano Bootstrap é testado e suportado nos principais navegadores modernos.
 
 * Google Chrome 4+
