@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Template Fluid - Peixe Urbano Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/960.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fluid.css" media="all">
+	<style type="text/css">
+		body {
+			padding: 20px 40px;
+		}
+		p {
+			font: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+		.btFB {
+			background: -webkit-linear-gradient(top , #7194C7 10%, #436BB2);
+			background: -moz-linear-gradient(top , #7194C7 10%, #436BB2);
+			background: -o-linear-gradient(top , #7194C7 10%, #436BB2);
+			background: -ms-linear-gradient(top , #7194C7 10%, #436BB2);
+			background: linear-gradient(top , #7194C7 10%, #436BB2);
+			background-color: #7194C7;
+
+			border: 1px solid #BCCDE5;
+
+			-webkit-box-shadow: 0 -1px 0 0 #4D7194;
+			-moz-box-shadow: 0 -1px 0 0 #4D7194;
+			box-shadow: 0 -1px 0 0 #4D7194;
+			font: bold 14px "trebuchet MS",Arial,sans-serif;
+			padding-left: 5px;
+		}
+
+		.btFB:hover {
+			background: -webkit-linear-gradient(top , #436BB2 100%, #436BB2);
+			background: -moz-linear-gradient(top , #436BB2 100%, #436BB2);
+			background: -o-linear-gradient(top , #436BB2 100%, #436BB2);
+			background: -ms-linear-gradient(top , #436BB2 100%, #436BB2);
+			background: linear-gradient(top , #436BB2 100%, #436BB2);
+			background: #436BB2;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			filter: alpha(opacity=100);
+			opacity: 1;
+			-moz-opacity: 1;
+		}
+
+		.btFB span {
+			float: left;
+			width: 30px;
+			height: 35px;
+    		margin: -10px 10px -10px 0;
+			border-right: 1px solid #375790;
+			background: url("logoFB.png") center no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="global">
+		<header class="header">
+			<div class="row">
+				<h1 class="grid2">logomarca</h1>
+				<nav class="grid10">
+					<ul>
+						<li><a href="link-1" title="Menu-1">Menu-1</a></li>
+						<li><a href="link-2" title="Menu-2">Menu-2</a></li>
+						<li><a href="link-3" title="Menu-3">Menu-3</a></li>
+						<li><a href="" class="btFB btn"> <span></span> Logar com Facebook</a></li>
+						<li><a href="" class="btFB btn"> <span></span> Log in with Facebook </a></li>
+						<li><a href="" class="btFB btn"> <span></span> Inicia sesión con Facebook </a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="content">
+			<div class="row">
+				<article class="grid4">
+					<h2>titulo</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<p><a href="#" id="testem" title="Ver mais" class="btn">Modal</a></p>
+				</article>
+				<article class="grid4">
+					<h2>titulo</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<p><a href="" title="Ver mais" class="btn">Ver mais</a></p>
+				</article>
+				<article class="grid4">
+					<h2>titulo</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<p><a href="" title="Ver mais" class="btn sucess">Ver mais</a></p>
+				</article>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="row">
+				<div class="grid4">
+					<ul>
+						<li><a href="link-1" title="Link Sidebar-1">Link Sidebar-1</a></li>
+						<li><a href="link-2" title="Link Sidebar-2">Link Sidebar-2</a></li>
+						<li><a href="link-3" title="Link Sidebar-3">Link Sidebar-3</a></li>
+					</ul>
+				</div>
+				<div class="grid4">
+					<ul>
+						<li><a href="link-1" title="Link Sidebar-1">Link Sidebar-1</a></li>
+						<li><a href="link-2" title="Link Sidebar-2">Link Sidebar-2</a></li>
+						<li><a href="link-3" title="Link Sidebar-3">Link Sidebar-3</a></li>
+					</ul>
+				</div>
+				<div class="grid4">
+					<ul>
+						<li><a href="link-1" title="Link Sidebar-1">Link Sidebar-1</a></li>
+						<li><a href="link-2" title="Link Sidebar-2">Link Sidebar-2</a></li>
+						<li><a href="#" id="Modal2" title="Link Sidebar-3">Link Sidebar-3</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<div class="maskModal"></div>
+	</div>
+	<!-- SCRIPTS -->
+	<script src="../assets/libs/jquery-1.7.1.min.js"></script>
+	<script src="../assets/libs/modernizr-2.0.6.min.js"></script>
+	<script src="../assets/scripts/modal.js"></script>	
+	<script>
+		$(document).ready(function(){
+			//$("#testem").modal("<p>Rich content.</p>");
+			$("#testem").ModalSystem({
+				idModal: "#testem",
+				titleModal: 'Titulo do meu primeiro modal',
+				contentModal: '<p>Conteudo do meu Modal</p>',
+				MaskModal: '.maskModal'
+			})
+			$("#Modal2").ModalSystem({
+				idModal: "#Modal2",
+				titleModal: 'Titudo do Seu Modal',
+				contentModal: '<p>Conteudo do modal 02</p>',
+				MaskModal: '.maskModal'
+			})
+		})
+	</script>
+</body>
+</html>

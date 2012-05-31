@@ -1,6 +1,6 @@
 /*!
      * Peixe Urbano Bootstrap v0.1.0
-     * Sistema de Abas
+     * Sistema de Accrodion
      * Copyright 2012 Peixe Urbano
      * Date: 10-05-2012
  */
